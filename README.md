@@ -1,2 +1,2 @@
-# telegram-bot-golang
+# i-home-bot-golang
 A telegram bot built in Go
