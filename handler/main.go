@@ -41,6 +41,10 @@ func HandleMessage(w http.ResponseWriter, r *http.Request) {
 		log.Printf("error parsing update, %s", err.Error())
 		return
 	}
+
+	// sanitize input
+	var sanitizeSeed = sanitize(update.Message.Text)
+
 }
 
 func (u Update) String() string {
